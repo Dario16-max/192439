@@ -2,37 +2,37 @@ import java.util.Scanner;
 
 public class SuperMalHecho {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner leer = new Scanner(System.in);
 
         System.out.println("Escriba el nombre del producto 1:");
-        String a = s.nextLine();
+        String a = leer.nextLine();
         System.out.println("Ingrese el precio:");
-        double p1 = s.nextDouble();
-        s.nextLine();
+        double p1 = leer.nextDouble();
+        leer.nextLine();
 
         System.out.println("Escriba el nombre del producto 2:");
-        String b = s.nextLine();
+        String b = leer.nextLine();
         System.out.println("Ingrese el precio:");
-        float p2 = s.nextFloat();
-        s.nextLine();
+        float p2 = leer.nextFloat();
+        leer.nextLine();
 
         System.out.println("Escriba el nombre del producto 3:");
-        String c = s.nextLine();
+        String c = leer.nextLine();
         System.out.println("Ingrese el precio:");
-        int p3 = s.nextInt();
-        s.nextLine();
+        int p3 = leer.nextInt();
+        leer.nextLine();
 
         System.out.println("Escriba el nombre del producto 4:");
-        String d = s.nextLine();
+        String d = leer.nextLine();
         System.out.println("Ingrese el precio:");
-        long p4 = s.nextLong();
-        s.nextLine();
+        long p4 = leer.nextLong();
+        leer.nextLine();
 
         System.out.println("Escriba el nombre del producto 5:");
-        String e = s.nextLine();
+        String e = leer.nextLine();
         System.out.println("Ingrese el precio:");
-        short p5 = s.nextShort();
-        s.nextLine();
+        short p5 = leer.nextShort();
+        leer.nextLine();
 
         double imp1 = (p1 * 0.19);
         double desc1 = (p1 > 10000) ? (p1 * 0.10) : 0;
@@ -62,6 +62,8 @@ public class SuperMalHecho {
 
         double suma = total1 + total2 + total3 + total4 + total5;
         System.out.println("El total de la compra es: " + suma);
+
+        leer.close();
     }
 }
 
